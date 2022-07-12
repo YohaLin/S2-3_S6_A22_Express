@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {{!-- 直接引入本地的bs資源喔 --}}
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  
+</head>
+<body>
+  {{!-- 製作佈局 --}}
+  <nav class="navbar d-flex">
+    <div>
+      <a href="/">
+        <button class="btn btn-secondary me-2" type="button" id="index">回到首頁</button>
+      </a>   
+    </div>
+    <div class="container">
+      <form class="container-fluid d-flex justify-content-end">
+        <a href="/about">
+          <button class="btn btn-secondary me-2" type="button" id="about">About</button>
+        </a>
+        <a href="/portfolio">
+          <button class="btn btn-secondary me-2" type="button" id="portfolio">Portfolio</button>
+        </a>
+        <a href="/contact">
+          <button class="btn btn-secondary me-2" type="button" id="contact">Contact</button>
+        </a>
+      </form>
+    </div>
+  </nav>
+
+  {{{body}}}
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+</html>
